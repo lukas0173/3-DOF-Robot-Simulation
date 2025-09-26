@@ -1,6 +1,5 @@
 function [Theta1, Theta2, Theta3] = inverse_kinematics(x, y, phi)
 % This function calculates the inverse kinematics for a 3-DOF planar robot
-% based on the geometric solution from the 'Inverse Kinematics.pdf' file [3].
 %
 % INPUTS:
 %   x, y: The target coordinates of the end-effector.
@@ -36,7 +35,7 @@ k1 = L1 + L2 * cos(Theta2);
 k2 = L2 * sin(Theta2);
 Theta1 = atan2(Ywr, Xwr) - atan2(k2, k1);
 
-% Calculate the Third Joint Angle (Theta3) [3]
+% Calculate the Third Joint Angle (Theta3) 
 Theta3 = phi - Theta1 - Theta2;
 
 end

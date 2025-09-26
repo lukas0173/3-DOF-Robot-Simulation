@@ -1,6 +1,5 @@
 function [X, Y] = forward_kinematics(theta1, theta2, theta3)
 % This function calculates the forward kinematics for a 3-DOF planar robot
-% based on the equations from the 'Forward Kinematics.pdf' file [2].
 %
 % INPUTS:
 %   theta1, theta2, theta3: Joint angles in radians.
